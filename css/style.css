@@ -1,0 +1,123 @@
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+
+/* ------GLOBAL--------------- */
+
+h2,
+.red {
+    color: red;
+}
+
+.brown {
+    color: brown;
+}
+
+.blue {
+    color: blue;
+}
+
+.grey {
+    color: grey;
+}
+
+ul .li+li,
+ul .li+li>mark,
+ol .li+li,
+ol .li+li>mark {
+    color: hotpink;
+}
+
+
+/* ------HEADER--------- */
+
+#top,
+#top a {
+    color: blue;
+}
+
+
+/* ------MAIN------------------- */
+
+#main>p {
+    color: green;
+}
+
+h1 {
+    color: grey;
+}
+
+
+/* ----WORDING---------- */
+
+#wording>h2+p {
+    color: blue;
+}
+
+#wording>p {
+    color: blueviolet;
+}
+
+
+/* ----HISTORY---------- */
+
+#history div~* {
+    color: chocolate;
+}
+
+
+/* ------FOOTER-------- */
+
+footer>div {
+    color: green;
+}
+
+#lit ul li~* {
+    color: red;
+}
+
+#lit ul li mark {
+    color: blue;
+}
+
+#links ul .all~li {
+    color: pink;
+}
+
+.ontop a {
+    color: purple;
+}
